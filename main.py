@@ -12,7 +12,6 @@ from keep_alive import keep_alive
 keep_alive()
 
 
-os.system("pip install -r requirements.txt")
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 def check_for_updates():
