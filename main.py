@@ -90,7 +90,7 @@ def main():
     proxy_url = proxy_servers.get(proxy_choice)
 
     twitch_username = "lean1003_"
-    proxy_count = 15
+    proxy_count = 10
     os.system("cls")
     print(Colorate.Vertical(Colors.green_to_cyan, Center.XCenter("""
            
