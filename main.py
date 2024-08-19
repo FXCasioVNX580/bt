@@ -7,6 +7,9 @@ from colorama import Fore
 from pystyle import Center, Colors, Colorate
 import os
 import time
+from keep_alive import keep_alive
+
+keep_alive()
 
 
 os.system("pip install -r requirements.txt")
