@@ -90,7 +90,7 @@ def main():
     proxy_url = proxy_servers.get(proxy_choice)
 
     twitch_username = "lean1003_"
-    proxy_count = int(input(Colorate.Vertical(Colors.cyan_to_blue, "How many proxy sites do you want to open? (Viewer to send)")))
+    proxy_count = 15
     os.system("cls")
     print(Colorate.Vertical(Colors.green_to_cyan, Center.XCenter("""
            
