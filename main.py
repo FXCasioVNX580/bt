@@ -45,27 +45,7 @@ def main():
     if not check_for_updates():
         return
     print_announcement()
-    print(Colorate.Vertical(Colors.green_to_cyan, Center.XCenter("""
-           
-                       ▄█   ▄█▄  ▄█    ▄████████    ▄█    █▄     ▄█  
-                       ███ ▄███▀ ███   ███    ███   ███    ███   ███  
-                       ███▐██▀   ███▌  ███    █▀    ███    ███   ███▌ 
-                      ▄█████▀    ███▌  ███         ▄███▄▄▄▄███▄▄ ███▌ 
-                     ▀▀█████▄    ███▌  ███        ▀▀███▀▀▀▀███▀  ███▌ 
-                       ███▐██▄   ███   ███    █▄    ███    ███   ███  
-                       ███ ▀███▄ ███   ███    ███   ███    ███   ███  
-                       ███   ▀█▀ █▀    ████████▀    ███    █▀    █▀   
-                       ▀                                             
- Improvements can be made to the code. If you're getting an error, visit my discord.
-                             Discord discord.gg/AFV9m8UXuT    
-                             Github  github.com/kichi779    """)))
-    announcement = print_announcement()
-    print("")
-    print(Colors.red, Center.XCenter("ANNOUNCEMENT"))
-    print(Colors.yellow, Center.XCenter(f"{announcement}"))
-    print("")
-    print("")
-    
+    announcement = print_announcement()    
 
     proxy_servers = {
         1: "https://www.blockaway.net",
@@ -78,33 +58,12 @@ def main():
     }
 
     # Selecting proxy server
-    print(Colors.green,"Proxy Server 1 Is Recommended")
-    print(Colorate.Vertical(Colors.green_to_blue,"Please select a proxy server(1,2,3..):"))
-    for i in range(1, 7):
-        print(Colorate.Vertical(Colors.red_to_blue,f"Proxy Server {i}"))
     proxy_choice = 1
     proxy_url = proxy_servers.get(proxy_choice)
 
     twitch_username = "lean1003_"
     proxy_count = 20
-    print(Colorate.Vertical(Colors.green_to_cyan, Center.XCenter("""
-           
-                       ▄█   ▄█▄  ▄█    ▄████████    ▄█    █▄     ▄█  
-                       ███ ▄███▀ ███   ███    ███   ███    ███   ███  
-                       ███▐██▀   ███▌  ███    █▀    ███    ███   ███▌ 
-                      ▄█████▀    ███▌  ███         ▄███▄▄▄▄███▄▄ ███▌ 
-                     ▀▀█████▄    ███▌  ███        ▀▀███▀▀▀▀███▀  ███▌ 
-                       ███▐██▄   ███   ███    █▄    ███    ███   ███  
-                       ███ ▀███▄ ███   ███    ███   ███    ███   ███  
-                       ███   ▀█▀ █▀    ████████▀    ███    █▀    █▀   
-                       ▀                                             
- Improvements can be made to the code. If you're getting an error, visit my discord.
-                             Discord discord.gg/AFV9m8UXuT    
-                             Github  github.com/kichi779    """)))
-    print('')
-    print('')
-    print(Colors.red, Center.XCenter("Viewers Send. Please don't hurry. If the viewers does not arrive, turn it off and on and do the same operations"))
-
+    print("Viewers sent.")
 
     chrome_path = 'C:\Program Files\Google\Chrome\Application\chrome.exe'
     driver_path = 'chromedriver.exe'
@@ -129,9 +88,6 @@ def main():
         text_box = driver.find_element(By.ID, 'url')
         text_box.send_keys(f'www.twitch.tv/{twitch_username}')
         text_box.send_keys(Keys.RETURN)
-
-    input(Colorate.Vertical(Colors.red_to_blue, "Viewers have all been sent. You can press enter to withdraw the views and the program will close."))
-    driver.quit()
 
 
 if __name__ == '__main__':
