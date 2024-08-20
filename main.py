@@ -45,10 +45,6 @@ def main():
     if not check_for_updates():
         return
     print_announcement()
-    
-
-    os.system(f"title Kichi779 - Twitch Viewer Bot @kichi#0779 ")
-
     print(Colorate.Vertical(Colors.green_to_cyan, Center.XCenter("""
            
                        ▄█   ▄█▄  ▄█    ▄████████    ▄█    █▄     ▄█  
@@ -91,7 +87,6 @@ def main():
 
     twitch_username = "lean1003_"
     proxy_count = 20
-    os.system("cls")
     print(Colorate.Vertical(Colors.green_to_cyan, Center.XCenter("""
            
                        ▄█   ▄█▄  ▄█    ▄████████    ▄█    █▄     ▄█  
