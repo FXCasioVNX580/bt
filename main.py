@@ -7,9 +7,9 @@ from colorama import Fore
 from pystyle import Center, Colors, Colorate
 import os
 import time
-from keep_alive import keep_alive
+#from keep_alive import keep_alive
 
-keep_alive()
+#keep_alive()
 
 
 warnings.filterwarnings("ignore", category=DeprecationWarning)
@@ -88,7 +88,8 @@ def main():
         text_box = driver.find_element(By.ID, 'url')
         text_box.send_keys(f'www.twitch.tv/{twitch_username}')
         text_box.send_keys(Keys.RETURN)
-
+    input(Colorate.Vertical(Colors.red_to_blue, "Viewers have all been sent. You can press enter to withdraw the views and the program will close."))
+    driver.quit()
 
 if __name__ == '__main__':
     main()
